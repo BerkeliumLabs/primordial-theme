@@ -1,4 +1,9 @@
-.ceylon__grid--row {
+.bk__container {
+  margin: 8px auto;
+  padding: 0 15px;
+}
+
+.bk__row {
   display: -ms-grid;
   display: grid;
   -webkit-column-gap: 15px;
@@ -8,140 +13,360 @@
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.ceylon__grid--col-1 {
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
-}
-
-.ceylon__grid--col-2 {
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-}
-
-.ceylon__grid--col-3 {
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-}
-
-.ceylon__grid--col-4 {
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-}
-
-.ceylon__grid--col-5 {
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-}
-
-.ceylon__grid--col-6 {
-  -ms-grid-columns: (1fr)[6];
-      grid-template-columns: repeat(6, 1fr);
-}
-
-.ceylon__grid--col-7 {
-  -ms-grid-columns: (1fr)[7];
-      grid-template-columns: repeat(7, 1fr);
-}
-
-.ceylon__grid--col-8 {
-  -ms-grid-columns: (1fr)[8];
-      grid-template-columns: repeat(8, 1fr);
-}
-
-.ceylon__grid--col-9 {
-  -ms-grid-columns: (1fr)[9];
-      grid-template-columns: repeat(9, 1fr);
-}
-
-.ceylon__grid--col-10 {
-  -ms-grid-columns: (1fr)[10];
-      grid-template-columns: repeat(10, 1fr);
-}
-
-.ceylon__grid--col-11 {
-  -ms-grid-columns: (1fr)[11];
-      grid-template-columns: repeat(11, 1fr);
-}
-
-.ceylon__grid--col-12 {
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
 }
 
-.ceylon__grid--cell-1 {
+.bk__row .cell-1 {
   -ms-grid-column-align: stretch;
       justify-self: stretch;
   grid-column: span 1;
 }
 
-.ceylon__grid--cell-2 {
+.bk__row .cell-2 {
   -ms-grid-column-align: stretch;
       justify-self: stretch;
   grid-column: span 2;
 }
 
-.ceylon__grid--cell-3 {
+.bk__row .cell-3 {
   -ms-grid-column-align: stretch;
       justify-self: stretch;
   grid-column: span 3;
 }
 
-.ceylon__grid--cell-4 {
+.bk__row .cell-4 {
   -ms-grid-column-align: stretch;
       justify-self: stretch;
   grid-column: span 4;
 }
 
-.ceylon__grid--cell-5 {
+.bk__row .cell-5 {
   -ms-grid-column-align: stretch;
       justify-self: stretch;
   grid-column: span 5;
 }
 
-.ceylon__grid--cell-6 {
+.bk__row .cell-6 {
   -ms-grid-column-align: stretch;
       justify-self: stretch;
   grid-column: span 6;
 }
 
-.ceylon__grid--cell-7 {
+.bk__row .cell-7 {
   -ms-grid-column-align: stretch;
       justify-self: stretch;
   grid-column: span 7;
 }
 
-.ceylon__grid--cell-8 {
+.bk__row .cell-8 {
   -ms-grid-column-align: stretch;
       justify-self: stretch;
   grid-column: span 8;
 }
 
-.ceylon__grid--cell-9 {
+.bk__row .cell-9 {
   -ms-grid-column-align: stretch;
       justify-self: stretch;
   grid-column: span 9;
 }
 
-.ceylon__grid--cell-10 {
+.bk__row .cell-10 {
   -ms-grid-column-align: stretch;
       justify-self: stretch;
   grid-column: span 10;
 }
 
-.ceylon__grid--cell-11 {
+.bk__row .cell-11 {
   -ms-grid-column-align: stretch;
       justify-self: stretch;
   grid-column: span 11;
 }
 
-.ceylon__grid--cell-12 {
+.bk__row .cell-12 {
   -ms-grid-column-align: stretch;
       justify-self: stretch;
   grid-column: span 12;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .bk__row {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+  .bk__row .cell-xs-1 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 1;
+  }
+  .bk__row .cell-xs-2 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 2;
+  }
+  .bk__row .cell-xs-3 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 3;
+  }
+  .bk__row .cell-xs-4 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 4;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .bk__row {
+    -ms-grid-columns: (1fr)[8];
+        grid-template-columns: repeat(8, 1fr);
+  }
+  .bk__row .cell-sm-1 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 1;
+  }
+  .bk__row .cell-sm-2 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 2;
+  }
+  .bk__row .cell-sm-3 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 3;
+  }
+  .bk__row .cell-sm-4 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 4;
+  }
+  .bk__row .cell-sm-5 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 5;
+  }
+  .bk__row .cell-sm-6 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 6;
+  }
+  .bk__row .cell-sm-7 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 7;
+  }
+  .bk__row .cell-sm-8 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 8;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .bk__row {
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+  }
+  .bk__row .cell-md-1 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 1;
+  }
+  .bk__row .cell-md-2 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 2;
+  }
+  .bk__row .cell-md-3 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 3;
+  }
+  .bk__row .cell-md-4 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 4;
+  }
+  .bk__row .cell-md-5 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 5;
+  }
+  .bk__row .cell-md-6 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 6;
+  }
+  .bk__row .cell-md-7 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 7;
+  }
+  .bk__row .cell-md-8 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 8;
+  }
+  .bk__row .cell-md-9 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 9;
+  }
+  .bk__row .cell-md-10 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 10;
+  }
+  .bk__row .cell-md-11 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 11;
+  }
+  .bk__row .cell-md-12 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 12;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .bk__row {
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+  }
+  .bk__row .cell-lg-1 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 1;
+  }
+  .bk__row .cell-lg-2 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 2;
+  }
+  .bk__row .cell-lg-3 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 3;
+  }
+  .bk__row .cell-lg-4 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 4;
+  }
+  .bk__row .cell-lg-5 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 5;
+  }
+  .bk__row .cell-lg-6 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 6;
+  }
+  .bk__row .cell-lg-7 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 7;
+  }
+  .bk__row .cell-lg-8 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 8;
+  }
+  .bk__row .cell-lg-9 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 9;
+  }
+  .bk__row .cell-lg-10 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 10;
+  }
+  .bk__row .cell-lg-11 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 11;
+  }
+  .bk__row .cell-lg-12 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 12;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .bk__row {
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+  }
+  .bk__row .cell-xl-1 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 1;
+  }
+  .bk__row .cell-xl-2 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 2;
+  }
+  .bk__row .cell-xl-3 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 3;
+  }
+  .bk__row .cell-xl-4 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 4;
+  }
+  .bk__row .cell-xl-5 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 5;
+  }
+  .bk__row .cell-xl-6 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 6;
+  }
+  .bk__row .cell-xl-7 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 7;
+  }
+  .bk__row .cell-xl-8 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 8;
+  }
+  .bk__row .cell-xl-9 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 9;
+  }
+  .bk__row .cell-xl-10 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 10;
+  }
+  .bk__row .cell-xl-11 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 11;
+  }
+  .bk__row .cell-xl-12 {
+    -ms-grid-column-align: stretch;
+        justify-self: stretch;
+    grid-column: span 12;
+  }
 }
 
 html,
