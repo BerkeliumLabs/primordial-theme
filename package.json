@@ -23,14 +23,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Buddhilive/berkelium-grid.git"
+    "url": "git+https://github.com/BerkeliumLabs/grid.git"
   },
   "keywords": [],
   "author": "Buddhi Kavindra",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Buddhilive/berkelium-grid/issues"
+    "url": "https://github.com/BerkeliumLabs/grid/issues"
   },
-  "homepage": "https://github.com/Buddhilive/berkelium-grid#readme",
+  "homepage": "https://github.com/BerkeliumLabs/grid#readme",
   "dependencies": {}
 }
