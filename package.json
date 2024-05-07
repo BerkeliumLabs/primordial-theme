@@ -1,19 +1,17 @@
 {
   "name": "@berkelium/primordial-theme",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha.1",
   "description": "",
-  "main": "gulpfile.js",
+  "main": "dist/styles.min.css",
   "style": "dist/styles.min.css",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "start": "http-server -p 5500",
-    "build": "npm run compile && npm run postbuild",
-    "compile": "sass src/main.scss dist/styles.min.css --style=compressed",
+    "build": "npm run compile",
+    "compile": "sass src/main.scss build/styles.css",
     "postbuild": "gulp",
     "publish": "npm publish --access public"
   },
+  "type": "module",
   "devDependencies": {
     "del": "^7.1.0",
     "gulp": "^5.0.0",
