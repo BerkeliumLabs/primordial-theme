@@ -1,5 +1,6 @@
 src/
-test/
+build/
 .gitignore
 gulpfile.js
 package-lock.json
+index.html
