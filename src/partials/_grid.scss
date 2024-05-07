@@ -3,7 +3,7 @@
         margin: 8px auto;
         padding: 0 15px;
     }
-    &__row {
+    &__grid {
         display: grid;
         column-gap: $gutter_space;
         row-gap: $gutter_space;
