@@ -9,7 +9,8 @@
     "build": "npm run compile",
     "compile": "sass src/main.scss build/styles.css",
     "postbuild": "gulp",
-    "publish": "npm publish --access public"
+    "publish": "npm publish --access public",
+    "watch": "sass src/main.scss build/styles.css --watch"
   },
   "type": "module",
   "devDependencies": {
