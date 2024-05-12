@@ -18,10 +18,15 @@ gulp.task('Bundle CSS', () => {
         .pipe(gulp.dest('./dist/'));
 });
 
+gulp.task('Copy Fonts', () => {
+    return gulp.src('./assets/fonts/*')
+        .pipe(gulp.dest('./dist/fonts/'));
+});
+
 gulp.task('Clean Build', () => {
     return del.deleteAsync([
         './Build/*',
     ]);
 });
 
-gulp.task('default', gulp.series(['Clean', 'Bundle CSS', 'Clean Build']));
+gulp.task('default', gulp.series(['Clean', 'Bundle CSS', 'Copy Fonts', 'Clean Build']));

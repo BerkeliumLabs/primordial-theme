@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="dist/styles.min.css" />
-    <!-- <link rel="stylesheet" href="../dist/main.min.css" /> -->
     <style>
-      .primordial-theme__grid div {
+      .primordial__row div {
         background-color: #888;
         font-size: 24px;
         padding: 15px;
@@ -16,8 +15,8 @@
     <title>Previewer</title>
   </head>
   <body>
-    <div class="primordial-theme__container">
-      <div class="primordial-theme__grid">
+    <div class="primordial__container">
+      <div class="primordial__row">
         <div class="cell-1">1</div>
         <div class="cell-1">2</div>
         <div class="cell-1">3</div>
@@ -31,7 +30,18 @@
         <div class="cell-1">11</div>
         <div class="cell-1">12</div>
       </div>
-      <ceylon-dots animation-type="bouncing"></ceylon-dots>
+    </div>
+    <div class="primordial__container">
+      <fieldset>
+        <legend>Legend</legend>
+        <button>Button</button>
+        <input type="text" placeholder="Enter text" />
+        <input type="checkbox" />
+        <input type="radio" />
+        <input type="date" />
+        <input type="time" />
+        <span class="material-icons">save</span>
+      </fieldset>
     </div>
   </body>
 </html>

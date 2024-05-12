@@ -1,0 +1,15 @@
+input {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid $border_color;
+    border-radius: 4px;
+    outline: none;
+    height: 15px;
+    &:focus-visible {
+        border: 1px solid $primary_color;
+    }
+    &[type=checkbox], &[type=radio] {
+        height: 20px;
+        width: 20px;
+        margin: 0;
+    }
+}
