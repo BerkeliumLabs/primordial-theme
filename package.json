@@ -1,7 +1,7 @@
 {
   "name": "@berkelium/primordial-theme",
   "version": "0.0.1",
-  "description": "Berkelium Primordial Theme",
+  "description": "Berkelium Primordial Theme for Solias App",
   "main": "dist/styles.min.css",
   "style": "dist/styles.min.css",
   "scripts": {
