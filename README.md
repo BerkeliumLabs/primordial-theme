@@ -4,4 +4,4 @@
 
 # Berkelium Primodial Theme
 
-This is exclusively used for Solias App
+This style librry is exclusively used for Solias App
